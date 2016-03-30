@@ -5,14 +5,13 @@ import fs from 'fs';
 import schedule from '../schedule.json';
 import 'date-utils';
 
-
 const main = () => {
 	let time = new Date();
 	time.addMinutes(5);
 
 	schedule.programs.forEach((program) => {
 		if (Date.getDayNumberFromName(program.wday) === time.getDay()) {
-			const start = new Date( `${time.toYMD()} ${program.time}` );
+			const start = new Date(`${time.toYMD()} ${program.time}`);
 			const end = start.clone().addMinutes(program.length);
 			if (time.between(start, end)) {
 				record(program, time);
@@ -39,7 +38,9 @@ const record = async (program, date) => {
 	stream.on('error', () => {
 		// 接続時に必ずエラーが起きるので何もしない
 	});
-	stream.pipe(fs.createWriteStream(`out/${program.title}-${date.toYMD()}.flv`));
+	fs.mkdir('out', () => {
+		stream.pipe(fs.createWriteStream(`out/${program.title}-${date.toYMD()}.flv`));
+	});
 };
 
 main();
