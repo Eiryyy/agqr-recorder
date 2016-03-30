@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node lib/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src -d lib",
-    "watch": "babel src -w -d lib"
+    "build": "./node_modules/.bin/babel src -d lib",
+    "watch": "./node_modules/.bin/babel src -w -d lib"
   },
   "repository": {
     "type": "git",
