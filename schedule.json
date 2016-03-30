@@ -1,0 +1,44 @@
+{
+	"programs": [ {
+		"title": "rafusuto",
+		"time": "1:30",
+		"length": 30,
+		"wday": "Thu"
+	}, {
+		"title": "daaaaa",
+		"time": "1:00",
+		"length": 30,
+		"wday": "Thu"
+	}, {
+		"title": "dreamtheater",
+		"time": "21:30",
+		"length": 30,
+		"wday": "Mon"
+	}, {
+		"title": "deliradi",
+		"time": "1:00",
+		"length": 30,
+		"wday": "Tue"
+	}, {
+		"title": "riepri",
+		"time": "0:00",
+		"length": 30,
+		"wday": "Fri"
+	}, {
+		"title": "fivestars_yuri",
+		"time": "20:00",
+		"length": 60,
+		"wday": "Fri"
+	}, {
+		"title": "fuwasata",
+		"time": "18:00",
+		"length": 30,
+		"wday": "Sat"
+	}, {
+		"title": "suzakinishi",
+		"time": "1:00",
+		"length": 30,
+		"wday": "Wed"
+	} ]
+
+}

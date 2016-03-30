@@ -1,0 +1,38 @@
+{
+  "name": "agqr-recorder",
+  "version": "0.0.1",
+  "description": "A streaming recorder from www.agqr.jp for node.js",
+  "main": "lib/index.js",
+  "scripts": {
+    "start": "node lib/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "watch": "babel src -w -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eiryyy/agqr-recorder.git"
+  },
+  "author": "Eiryyy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eiryyy/agqr-recorder/issues"
+  },
+  "homepage": "https://github.com/Eiryyy/agqr-recorder#readme",
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-stage-3": "^6.5.0"
+  },
+  "dependencies": {
+    "date-utils": "^1.2.19",
+    "rtmpdump": "^0.1.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-3"
+    ]
+  }
+}
